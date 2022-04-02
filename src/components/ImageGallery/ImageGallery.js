@@ -6,6 +6,7 @@ import ImageGalleryItem from '../ImageGalleryItem';
 import Modal from 'components/Modal';
 import Loader from 'components/Loader';
 import Button from 'components/Button';
+import propTypes from 'prop-types';
 
 const BASE_URL = 'https://pixabay.com/api/';
 const API_KEY = '24820519-59aa99241bf38d02e4bce65a9';
@@ -145,4 +146,7 @@ class ImageGallery extends Component {
   }
 }
 
+ImageGallery.propTypes = {
+  searchName: propTypes.string,
+};
 export default ImageGallery;

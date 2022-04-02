@@ -1,3 +1,4 @@
+import propTypes from 'prop-types';
 import React, { Component } from 'react';
 import { createPortal } from 'react-dom';
 import './Modal.css';
@@ -31,5 +32,10 @@ class Modal extends Component {
     );
   }
 }
+
+Modal.propTypes = {
+  children: propTypes.element,
+  activeModal: propTypes.func,
+};
 
 export default Modal;

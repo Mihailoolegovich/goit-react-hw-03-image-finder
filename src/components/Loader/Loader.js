@@ -2,8 +2,8 @@ import React from 'react';
 import { Bars } from 'react-loader-spinner';
 import './Loader.css';
 
-const Loader = ({ classN }) => (
-  <div className={classN}>
+const Loader = () => (
+  <div>
     <Bars
       heigth="200px"
       width="200px"
