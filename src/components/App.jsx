@@ -61,12 +61,7 @@ class App extends Component {
             ...prevState.dataImage,
             ...this.state.dataApi.hits.map(
               ({ id, webformatURL, largeImageURL, tags }) => {
-                return {
-                  id: id,
-                  webformatURL: webformatURL,
-                  largeImageURL: largeImageURL,
-                  tags: tags,
-                };
+                return { id, webformatURL, largeImageURL, tags };
               }
             ),
           ],
